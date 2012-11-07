@@ -70,9 +70,20 @@ class ProfileController extends Controller
 		if(isset($_POST['Profile']))
 		{
 			$model->attributes=$_POST['Profile'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->profileID));
-		}
+			if($model->save()) {
+                            if(isset($_POST['Criteria'])) {
+                                foreach ($_POST['Criteria'] as $criteriaID) {
+                                    $profileCriteriaModel = new ProfileCriteria;
+                                    $profileCriteriaModel->attributes = array(
+                                        'profileID' => $model->profileID,
+                                        'criteriaID' => $criteriaID
+                                        );
+                                    $profileCriteriaModel->save();
+                                }
+                            }
+                        }
+                        $this->redirect(array('view','id'=>$model->profileID));        
+                }
 
 		$this->render('create',array(
 			'model'=>$model,

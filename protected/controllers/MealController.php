@@ -85,11 +85,11 @@ class MealController extends Controller {
             $mealModel->attributes = $_POST['Meal'];
             if ($mealModel->save()) {
                 if (isset($_POST['Dish'])) {
-                    foreach ($_POST['Dish'] as $dish) {
+                    foreach ($_POST['Dish'] as $dishID) {
                         $mealDishModel = new MealDish;
                         $mealDishModel->attributes = array(
                             'mealID' => $mealModel->mealID,
-                            'dishID' => $dish
+                            'dishID' => $dishID
                             );
                         $mealDishModel->save();
                     }
