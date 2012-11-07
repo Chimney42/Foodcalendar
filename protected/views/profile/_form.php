@@ -48,11 +48,42 @@
 		<?php echo $form->checkBox($model,'glutenfree'); ?>
 		<?php echo $form->error($model,'glutenfree'); ?>
 	</div>
+        
+        	<div class="row">
+		<?php echo $form->labelEx($criteriaModel, 'criteriaID'); ?>
+                <?php echo $form->dropDownList($criteriaModel, 'name', CHtml::listData(Criteria::model()->findAll(), 'criteriaID', 'name')); ?>
+                <?php echo $form->error($criteriaModel, 'name'); ?>
+                <input type="button" value="add" onclick="fu(tmp)">
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
+        
+        <script type="text/javascript">
 
+        var tmp = 'Criteria_name';
+        
+        function fu(id) {
+            tmp = cloneAndAppendElement(id)
+        }    
+        function cloneAndAppendElement(id) {
+            var node = document.getElementById(id);
+            var clone = node.cloneNode(true);
+            var cloneName = clone.attributes['name'].value
+            var parts = cloneName.match(/([A-Za-z]*)\[([a-zA-Z]*)([0-9]*)\]/)
+            var count = (parts[3] === "" ? 1 : (parseInt(parts[3]) + 1))
+            var name = parts[1] + "[" + parts[2] + count + "]"
+            var id   = parts[1] + "_" + parts[2] + count
+            clone.setAttribute('name', name)
+            clone.setAttribute('id', id)
+            var newDiv = document.createElement("div");
+            newDiv.setAttribute('class', 'row')
+            newDiv.appendChild(clone)
+            node.parentNode.parentNode.insertBefore(newDiv, node.parentNode.nextSibling)
+            return id;
+        }
+        </script>
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

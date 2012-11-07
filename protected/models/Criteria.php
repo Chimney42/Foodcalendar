@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'Criteria':
  * @property integer $criteriaID
+ * @property string $name
  * @property string $criterion
  * @property string $operator
  * @property string $value
@@ -41,10 +42,10 @@ class Criteria extends CActiveRecord
 			array('criteriaID', 'numerical', 'integerOnly'=>true),
 			array('criterion', 'length', 'max'=>14),
 			array('operator', 'length', 'max'=>2),
-			array('value', 'length', 'max'=>45),
+			array('value, name', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('criteriaID, criterion, operator, value', 'safe', 'on'=>'search'),
+			array('criteriaID, name, criterion, operator, value', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,6 +67,7 @@ class Criteria extends CActiveRecord
 	{
 		return array(
 			'criteriaID' => 'Criteria',
+                        'name' => 'Name',
 			'criterion' => 'Criterion',
 			'operator' => 'Operator',
 			'value' => 'Value',
@@ -84,6 +86,7 @@ class Criteria extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('criteriaID',$this->criteriaID);
+                $criteria->compare('name', $this->name,true);
 		$criteria->compare('criterion',$this->criterion,true);
 		$criteria->compare('operator',$this->operator,true);
 		$criteria->compare('value',$this->value,true);

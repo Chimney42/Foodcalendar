@@ -76,6 +76,7 @@ class ProfileController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+                        'criteriaModel' => new Criteria
 		));
 	}
 
