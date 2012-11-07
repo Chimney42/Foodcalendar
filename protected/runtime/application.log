@@ -1,0 +1,77 @@
+2012/10/28 11:03:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "meal".' in /home/a7805903/public_html/framework/web/CController.php:484
+Stack trace:
+#0 /home/a7805903/public_html/framework/web/CController.php(271): CController->missingAction('meal')
+#1 /home/a7805903/public_html/framework/web/CWebApplication.php(283): CController->run('meal')
+#2 /home/a7805903/public_html/framework/web/CWebApplication.php(142): CWebApplication->runController('site/meal')
+#3 /home/a7805903/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/a7805903/public_html/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/meal
+HTTP_REFERER=http://foodcalendar.comyr.com/index.php?r=meal
+---
+2012/10/28 11:03:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "meal".' in /home/a7805903/public_html/framework/web/CController.php:484
+Stack trace:
+#0 /home/a7805903/public_html/framework/web/CController.php(271): CController->missingAction('meal')
+#1 /home/a7805903/public_html/framework/web/CWebApplication.php(283): CController->run('meal')
+#2 /home/a7805903/public_html/framework/web/CWebApplication.php(142): CWebApplication->runController('site/meal')
+#3 /home/a7805903/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/a7805903/public_html/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/meal
+HTTP_REFERER=http://foodcalendar.comyr.com/index.php/site/meal
+---
+2012/10/28 11:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "meal".' in /home/a7805903/public_html/framework/web/CController.php:484
+Stack trace:
+#0 /home/a7805903/public_html/framework/web/CController.php(271): CController->missingAction('meal')
+#1 /home/a7805903/public_html/framework/web/CWebApplication.php(283): CController->run('meal')
+#2 /home/a7805903/public_html/framework/web/CWebApplication.php(142): CWebApplication->runController('site/meal')
+#3 /home/a7805903/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/a7805903/public_html/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/meal
+HTTP_REFERER=http://foodcalendar.comyr.com/index.php/site/meal
+---
+2012/10/28 11:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "meal".' in /home/a7805903/public_html/framework/web/CController.php:484
+Stack trace:
+#0 /home/a7805903/public_html/framework/web/CController.php(271): CController->missingAction('meal')
+#1 /home/a7805903/public_html/framework/web/CWebApplication.php(283): CController->run('meal')
+#2 /home/a7805903/public_html/framework/web/CWebApplication.php(142): CWebApplication->runController('site/meal')
+#3 /home/a7805903/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/a7805903/public_html/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/meal
+HTTP_REFERER=http://foodcalendar.comyr.com/index.php/site/meal
+---
+2012/10/28 11:07:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "meal".' in /home/a7805903/public_html/framework/web/CController.php:484
+Stack trace:
+#0 /home/a7805903/public_html/framework/web/CController.php(271): CController->missingAction('meal')
+#1 /home/a7805903/public_html/framework/web/CWebApplication.php(283): CController->run('meal')
+#2 /home/a7805903/public_html/framework/web/CWebApplication.php(142): CWebApplication->runController('site/meal')
+#3 /home/a7805903/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/a7805903/public_html/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/meal
+HTTP_REFERER=http://foodcalendar.comyr.com/index.php?r=user/
+---
+2012/10/28 11:08:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "meal".' in /home/a7805903/public_html/framework/web/CController.php:484
+Stack trace:
+#0 /home/a7805903/public_html/framework/web/CController.php(271): CController->missingAction('meal')
+#1 /home/a7805903/public_html/framework/web/CWebApplication.php(283): CController->run('meal')
+#2 /home/a7805903/public_html/framework/web/CWebApplication.php(142): CWebApplication->runController('site/meal')
+#3 /home/a7805903/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/a7805903/public_html/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/meal
+HTTP_REFERER=http://foodcalendar.comyr.com/index.php?r=user/
+---
+2012/10/28 11:08:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "meal".' in /home/a7805903/public_html/framework/web/CController.php:484
+Stack trace:
+#0 /home/a7805903/public_html/framework/web/CController.php(271): CController->missingAction('meal')
+#1 /home/a7805903/public_html/framework/web/CWebApplication.php(283): CController->run('meal')
+#2 /home/a7805903/public_html/framework/web/CWebApplication.php(142): CWebApplication->runController('site/meal')
+#3 /home/a7805903/public_html/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/a7805903/public_html/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/meal
+HTTP_REFERER=http://foodcalendar.comyr.com/index.php?r=user/
+---
