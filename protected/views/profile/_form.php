@@ -22,32 +22,30 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'userID'); ?>
-		<?php echo $form->textField($model,'userID'); ?>
-		<?php echo $form->error($model,'userID'); ?>
+                <?php echo $form->hiddenField($model,'userID',array('value'=>Yii::app()->user->id)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'vegetarian'); ?>
-		<?php echo $form->textField($model,'vegetarian'); ?>
+		<?php echo $form->checkBox($model,'vegetarian'); ?>
 		<?php echo $form->error($model,'vegetarian'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'vegan'); ?>
-		<?php echo $form->textField($model,'vegan'); ?>
+		<?php echo $form->checkBox($model,'vegan'); ?>
 		<?php echo $form->error($model,'vegan'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'lactosefree'); ?>
-		<?php echo $form->textField($model,'lactosefree'); ?>
+		<?php echo $form->checkBox($model,'lactosefree'); ?>
 		<?php echo $form->error($model,'lactosefree'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'glutenfree'); ?>
-		<?php echo $form->textField($model,'glutenfree'); ?>
+		<?php echo $form->checkBox($model,'glutenfree'); ?>
 		<?php echo $form->error($model,'glutenfree'); ?>
 	</div>
 
